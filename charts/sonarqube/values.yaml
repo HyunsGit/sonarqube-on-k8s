@@ -133,10 +133,10 @@ affinity: {}
 # kubectl taint nodes <node> sonarqube=true:NoSchedule
 # The following statement will tolerate this taint and as such reverse a node for sonarqube
 tolerations: []
-#  - key: "sonarqube"
-#    operator: "Equal"
-#    value: "true"
-#    effect: "NoSchedule"
+  - key: "sonarqube"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
 
 # Node labels for pod assignment
 # Ref: https://kubernetes.io/docs/user-guide/node-selection/
